@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "The Hogwarts Emporium";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="home-container" style="background-color: #0e1a40; min-height: 100vh;">
+    <!-- Hero Section -->
+    <div class="hero-section" style="background: linear-gradient(rgba(14, 26, 64, 0.8), rgba(22, 46, 107, 0.8)), url('https://i.pinimg.com/736x/a5/be/1e/a5be1eab17eced32f3cf4493aa2a88b1.jpg');
+            background-size: cover; background-position: center;
+            padding: 5rem 2rem; text-align: center;">
+        <div class="container">
+            <h1 style="color: #946b2d; font-family: 'Cinzel', serif; font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                Welcome to The Hogwarts Emporium
+            </h1>
+            <p class="lead" style="color: #b4c7dc; max-width: 800px; margin: 2rem auto; font-size: 1.25rem;">
+                Your premier destination for magical potions and spellbooks. Established 993 A.D.
+            </p>
+            <div class="hero-buttons mt-4">
+                <a asp-controller="Potions" asp-action="Index" class="btn btn-lg" style="background-color: #946b2d; color: #0e1a40; margin: 0 0.5rem; font-weight: bold;">
+                    <i class="fas fa-flask"></i> Browse Potions
+                </a>
+                <a asp-controller="Spells" asp-action="Index" class="btn btn-lg" style="background-color: #222f5b; color: #b4c7dc; margin: 0 0.5rem;">
+                    <i class="fas fa-book-sparkles"></i> Explore Spells
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section py-5" style="background-color: #1a2d5a;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #946b2d; font-family: 'Cinzel', serif;">Magical Services</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="feature-card text-center p-4" style="background: linear-gradient(145deg, #0e1a40 0%, #222f5b 100%);
+                            border-radius: 10px; height: 100%; border: 1px solid #946b2d;">
+                        <div class="icon-container mb-3" style="font-size: 3rem; color: #946b2d;">
+                            <i class="fas fa-mortar-pestle"></i>
+                        </div>
+                        <h3 style="color: #b4c7dc;">Potion Brewing</h3>
+                        <p style="color: #d8e1f0;">In our shop you can look through all the potions and choose which ones you want to brew. Also you can add your own created potions for the other witches and wizards to use.</p>
+                        <a asp-controller="Potions" asp-action="Index" class="btn btn-sm mt-2" style="background-color: #222f5b; color: #b4c7dc; border: 1px solid #946b2d;">
+                            Explore Potions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4">
+                    <div class="feature-card text-center p-4" style="background: linear-gradient(145deg, #0e1a40 0%, #222f5b 100%);
+                            border-radius: 10px; height: 100%; border: 1px solid #946b2d;">
+                        <div class="icon-container mb-3" style="font-size: 3rem; color: #946b2d;">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3 style="color: #b4c7dc;">Spell Mastery</h3>
+                        <p style="color: #d8e1f0;">Master ancient spells with our comprehensive spellbooks and tutorials</p>
+                        <a asp-controller="Spells" asp-action="Index" class="btn btn-sm mt-2" style="background-color: #222f5b; color: #b4c7dc; border: 1px solid #946b2d;">
+                            Discover Spells
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials py-5" style="background-color: #0e1a40;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #946b2d; font-family: 'Cinzel', serif;">What Wizards Say</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
+                    <div class="testimonial p-4" style="background: linear-gradient(145deg, #0e1a40 0%, #222f5b 100%);
+                            border-radius: 10px; border-left: 4px solid #946b2d;">
+                        <p style="color: #d8e1f0; font-style: italic;">
+                            "The Polyjuice Potion ingredients I purchased here were of the highest quality.
+                            Perfect for my... academic research."
+                        </p>
+                        <div class="author mt-3" style="display: flex; align-items: center;">
+                            <div class="avatar" style="width: 50px; height: 50px; border-radius: 50%;
+                                background-color: #222f5b; display: flex; align-items: center; justify-content: center;
+                                margin-right: 1rem; color: #b4c7dc; font-weight: bold; border: 1px solid #946b2d;">
+                                HG
+                            </div>
+                            <div>
+                                <h5 style="color: #b4c7dc; margin-bottom: 0;">Hermione Granger</h5>
+                                <small style="color: #946b2d;">Minister for Magic</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section py-5 text-center" style="background: linear-gradient(145deg, #0e1a40 0%, #1a2d5a 100%);">
+        <div class="container">
+            <h2 style="color: #946b2d; font-family: 'Cinzel', serif;">Ready to Begin Your Magical Journey?</h2>
+            <p class="lead mb-4" style="color: #b4c7dc; max-width: 700px; margin: 1rem auto;">
+                Join thousands of wizards and witches who trust us for their potion ingredients and spellbooks
+            </p>
+            <a asp-controller="Potions" asp-action="Index" class="btn btn-lg" style="background-color: #946b2d; color: #0e1a40; font-weight: bold;">
+                Enter the Shop <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero-buttons .btn, .cta-section .btn {
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+        .hero-buttons .btn:hover, .cta-section .btn:hover {
+            filter: brightness(1.2);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(148, 107, 45, 0.3);
+        }
+
+    .feature-card {
+        transition: all 0.3s ease;
+    }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(148, 107, 45, 0.3);
+            border-color: #b4c7dc !important;
+        }
+
+    .testimonial {
+        transition: all 0.3s ease;
+    }
+
+        .testimonial:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(148, 107, 45, 0.2);
+        }
+</style>

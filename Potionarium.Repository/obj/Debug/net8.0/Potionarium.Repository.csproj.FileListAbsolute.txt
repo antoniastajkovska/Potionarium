@@ -1,0 +1,15 @@
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\bin\Debug\net8.0\Potionarium.Repository.deps.json
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\bin\Debug\net8.0\Potionarium.Repository.dll
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\bin\Debug\net8.0\Potionarium.Repository.pdb
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\bin\Debug\net8.0\Potionarium.Domain.dll
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\bin\Debug\net8.0\Potionarium.Domain.pdb
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.csproj.AssemblyReference.cache
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.AssemblyInfoInputs.cache
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.AssemblyInfo.cs
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.csproj.CoreCompileInputs.cache
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionar.FB47E223.Up2Date
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.dll
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\refint\Potionarium.Repository.dll
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\Potionarium.Repository.pdb
+C:\Users\anton\source\repos\Potionarium\Potionarium.Repository\obj\Debug\net8.0\ref\Potionarium.Repository.dll

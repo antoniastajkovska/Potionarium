@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Web", "Potionarium.Web\Potionarium.Web.csproj", "{016F2195-5DA1-4266-A3AE-BE9B759C234C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Domain", "Potionarium.Domain\Potionarium.Domain.csproj", "{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Service", "Potionarium.Service\Potionarium.Service.csproj", "{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Repository", "Potionarium.Repository\Potionarium.Repository.csproj", "{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{016F2195-5DA1-4266-A3AE-BE9B759C234C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016F2195-5DA1-4266-A3AE-BE9B759C234C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016F2195-5DA1-4266-A3AE-BE9B759C234C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016F2195-5DA1-4266-A3AE-BE9B759C234C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6492980-FA34-465C-8F55-96BDD82DD4F4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+﻿@model List<Potionarium.Domain.DomainModels.Spell>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<div class="container">
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var item = Model[i];
+        @if(i%3 == 0)
+        {
+            @: <div class = "row">
+        }
+
+        <div class="col-3 m-3">
+            <div class="card" style="width: 20rem; height: 30rem;">
+                <img class="card-img-top" src="@item.ImageURL" style="height: 50%;" alt="Spell Image"  />
+                <div class="card-body">
+                    <h3>@item.Name</h3>
+                    <p>Category: @item.Category</p>
+                    <p>Effect: @item.Effect</p>
+                </div>
+
+                <div class="card-footer">
+                    <a asp-action="AddSpellToSpellBook" asp-route-id="@item.Id">Add to Spell Book</a>
+                    <a asp-controller="Spells" asp-action="Details" asp-route-id="@item.Id" class="btn btn-danger">Details</a>
+                    @if (!item.IsFromApi)
+                    {
+                        <a asp-controller="Spells" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                        <a asp-controller="Spells" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @if(i%3 == 2)
+        {
+            @: </div>
+        }
+    }
+
+</div>

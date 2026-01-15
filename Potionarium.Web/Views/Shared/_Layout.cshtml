@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Potionarium</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Potionarium.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    @RenderSection("Styles", required: false)
+</head>
+<body style="background-color: #0e1a40; color: #b3c6ff;">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color: #222f5b; border-color: #5d5d5d !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="font-family: 'Cinzel', serif; color: #d1a853; font-size: 1.5rem;">
+                    <i class="fas fa-hat-wizard"></i> Potionarium
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" style="border-color: #d1a853;">
+                    <span class="navbar-toggler-icon" style="filter: invert(80%);"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: #b3c6ff;">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Spells" asp-action="Index" style="color: #b3c6ff;">
+                                <i class="fas fa-magic"></i> Spells
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Potions" asp-action="Index" style="color: #b3c6ff;">
+                                <i class="fas fa-flask"></i> Potions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Inventories" asp-action="Index" style="color: #b3c6ff;">
+                                <i class="fas fa-box-open"></i> Inventory
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="SpellBooks" asp-action="Index" style="color: #b3c6ff;">
+                                <i class="fas fa-book-sparkles"></i> Spell Book
+                            </a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" style="padding: 0 2rem;">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="background-color: #222f5b; border-color: #5d5d5d !important;">
+        <div class="container" style="color: #d1a853;">
+            &copy; 2025 - Potionarium - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #b3c6ff;">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <style>
+        .navbar {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin: 0 0.2rem;
+        }
+
+            .nav-link:hover {
+                background-color: rgba(148, 107, 45, 0.3);
+                color: #d1a853 !important;
+                transform: translateY(-2px);
+            }
+
+            .nav-link.active {
+                background-color: #946b2d;
+                color: white !important;
+            }
+
+        .footer {
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .dropdown-menu {
+            background-color: #222f5b;
+            border: 1px solid #5d5d5d;
+        }
+
+        .dropdown-item {
+            color: #b3c6ff;
+        }
+
+            .dropdown-item:hover {
+                background-color: #3a4d8c;
+                color: #d1a853;
+            }
+
+        /* Improved login/logout and email display */
+        .nav-item .nav-link.text-dark {
+            color: #d1a853 !important;
+        }
+
+        .navbar .text-dark {
+            color: #d1a853 !important;
+        }
+
+        .nav-item .btn-link.text-dark {
+            color: #d1a853 !important;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            .nav-item .btn-link.text-dark:hover {
+                color: #f8e8b0 !important;
+                text-decoration: underline;
+            }
+
+        .dropdown-item.text-dark {
+            color: #d1a853 !important;
+        }
+
+            .dropdown-item.text-dark:hover {
+                color: #f8e8b0 !important;
+            }
+
+        .greeting-text {
+            color: #d1a853 !important;
+            margin-right: 15px;
+            font-weight: 500;
+        }
+
+        .logout-btn {
+            background-color: transparent;
+            border: none;
+            color: #d1a853 !important;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+            .logout-btn:hover {
+                color: #f8e8b0 !important;
+                text-decoration: underline;
+            }
+    </style>
+</body>
+</html>

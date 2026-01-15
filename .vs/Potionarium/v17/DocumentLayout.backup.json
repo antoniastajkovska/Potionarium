@@ -1,0 +1,742 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anton\\source\\repos\\Potionarium\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\controllers\\spellbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\controllers\\spellbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\potions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\potions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\potions\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\potions\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\potions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\potions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\inventories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\inventories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\potions\\addpotiontoinventory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\potions\\addpotiontoinventory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\potions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\potions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\potions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\potions\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\spells\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\spells\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\spellbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\spellbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\views\\spells\\addspelltospellbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\views\\spells\\addspelltospellbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\implementation\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\implementation\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\implementation\\spellsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\implementation\\spellsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\implementation\\potionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\implementation\\potionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\interface\\ispellsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\interface\\ispellsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\implementation\\spellbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\implementation\\spellbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\interface\\ispellbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\interface\\ispellbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\interface\\ipotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\interface\\ipotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\controllers\\potionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\controllers\\potionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\spellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\spellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\inventorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\inventorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\addspelltobookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\addspelltobookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\addpotiontoinventorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\addpotiontoinventorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\spellinspellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\spellinspellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\spellbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\spellbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\interface\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\interface\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\potionapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\potionapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.service\\implementation\\fetchapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}|Potionarium.Service\\Potionarium.Service.csproj|solutionrelative:potionarium.service\\implementation\\fetchapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\spelldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\spelldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\potiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\potiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\dto\\potiondatawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\dto\\potiondatawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\domainmodels\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\domainmodels\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016F2195-5DA1-4266-A3AE-BE9B759C234C}|Potionarium.Web\\Potionarium.Web.csproj|solutionrelative:potionarium.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.domain\\potionarium.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16A0EF7D-97B7-4ED3-A30B-6409533A04C6}|Potionarium.Domain\\Potionarium.Domain.csproj|solutionrelative:potionarium.domain\\potionarium.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}|Potionarium.Repository\\Potionarium.Repository.csproj|c:\\users\\anton\\source\\repos\\potionarium\\potionarium.repository\\migrations\\20250722122234_addeddto_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}|Potionarium.Repository\\Potionarium.Repository.csproj|solutionrelative:potionarium.repository\\migrations\\20250722122234_addeddto_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Spell.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\Spell.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\Spell.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\Spell.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\Spell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T13:51:59.948Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwKYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T14:00:23.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Potions\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Edit.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Potions\\Edit.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAIwHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T16:03:53.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Details.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Potions\\Details.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Details.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Potions\\Details.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwGUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T12:59:16.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Inventories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Inventories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Inventories\\Index.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Inventories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T12:32:05.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpellBooksController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Controllers\\SpellBooksController.cs",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Controllers\\SpellBooksController.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Controllers\\SpellBooksController.cs",
+              "RelativeToolTip": "Potionarium.Web\\Controllers\\SpellBooksController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:15:35.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Spells\\Index.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Spells\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Spells\\Index.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Spells\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T13:45:35.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Index.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Potions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Index.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Potions\\Index.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-17T15:35:48.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\SpellBooks\\Index.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\SpellBooks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\SpellBooks\\Index.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\SpellBooks\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T14:49:15.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Create.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Potions\\Create.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Create.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Potions\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T16:15:31.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T11:47:38.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Potionarium.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:43:21.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddPotionToInventory.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\AddPotionToInventory.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Potions\\AddPotionToInventory.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\AddPotionToInventory.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Potions\\AddPotionToInventory.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAYwDcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T12:05:27.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Potions\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Potions\\Delete.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Potions\\Delete.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T16:12:41.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddSpellToSpellBook.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Spells\\AddSpellToSpellBook.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Views\\Spells\\AddSpellToSpellBook.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Views\\Spells\\AddSpellToSpellBook.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Views\\Spells\\AddSpellToSpellBook.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T14:50:41.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Implementation\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\InventoryService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Implementation\\InventoryService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwBwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:11:57.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SpellsService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\SpellsService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Implementation\\SpellsService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\SpellsService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Implementation\\SpellsService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwDcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T13:58:16.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PotionService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\PotionService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Implementation\\PotionService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\PotionService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Implementation\\PotionService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:11:55.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ISpellsService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\ISpellsService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Interface\\ISpellsService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\ISpellsService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Interface\\ISpellsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T15:25:00.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SpellBookService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\SpellBookService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Implementation\\SpellBookService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\SpellBookService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Implementation\\SpellBookService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T13:58:17.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ISpellBookService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\ISpellBookService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Interface\\ISpellBookService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\ISpellBookService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Interface\\ISpellBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T13:57:31.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPotionService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\IPotionService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Interface\\IPotionService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\IPotionService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Interface\\IPotionService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:07:27.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PotionsController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Controllers\\PotionsController.cs",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Controllers\\PotionsController.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Controllers\\PotionsController.cs",
+              "RelativeToolTip": "Potionarium.Web\\Controllers\\PotionsController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAArwIcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T15:25:15.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\Inventory.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\Inventory.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\Inventory.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T13:22:12.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "InventoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\InventoryDto.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\InventoryDto.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\InventoryDto.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\InventoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:42:02.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddSpellToBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\AddSpellToBookDto.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\AddSpellToBookDto.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\AddSpellToBookDto.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\AddSpellToBookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:02:47.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SpellBook.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\SpellBook.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\SpellBook.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\SpellBook.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\SpellBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T16:13:23.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AddPotionToInventoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\AddPotionToInventoryDto.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\AddPotionToInventoryDto.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\AddPotionToInventoryDto.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\AddPotionToInventoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:38:54.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SpellInSpellBook.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\SpellInSpellBook.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\SpellInSpellBook.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\SpellInSpellBook.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\SpellInSpellBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T13:23:02.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\InventoryItem.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\InventoryItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T13:22:27.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SpellBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\SpellBookDto.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\SpellBookDto.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\SpellBookDto.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\SpellBookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T14:01:04.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IInventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\IInventoryService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Interface\\IInventoryService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Interface\\IInventoryService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Interface\\IInventoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T15:51:18.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Potion.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\Potion.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\Potion.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\Potion.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\Potion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:50:44.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PotionApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\PotionApiResponse.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\PotionApiResponse.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\PotionApiResponse.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\PotionApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:22:26.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PotionDataWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\PotionDataWrapper.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\PotionDataWrapper.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\PotionDataWrapper.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\PotionDataWrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:23:29.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DomainModels\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DomainModels\\BaseEntity.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DomainModels\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T13:22:06.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20250722122234_addedDTO_1.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Repository\\Migrations\\20250722122234_addedDTO_1.cs",
+              "RelativeDocumentMoniker": "Potionarium.Repository\\Migrations\\20250722122234_addedDTO_1.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Repository\\Migrations\\20250722122234_addedDTO_1.cs",
+              "RelativeToolTip": "Potionarium.Repository\\Migrations\\20250722122234_addedDTO_1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T12:22:35.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PotionDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\PotionDto.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\PotionDto.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\PotionDto.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\PotionDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T12:14:23.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FetchAPIService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\FetchAPIService.cs",
+              "RelativeDocumentMoniker": "Potionarium.Service\\Implementation\\FetchAPIService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Service\\Implementation\\FetchAPIService.cs",
+              "RelativeToolTip": "Potionarium.Service\\Implementation\\FetchAPIService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T11:46:05.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SpellDto.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\SpellDto.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\DTO\\SpellDto.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\DTO\\SpellDto.cs",
+              "RelativeToolTip": "Potionarium.Domain\\DTO\\SpellDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T13:18:33.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAmwIYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T11:08:58.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Potionarium.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T11:08:52.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Potionarium.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\Potionarium.Domain.csproj",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\Potionarium.Domain.csproj",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\Potionarium.Domain.csproj",
+              "RelativeToolTip": "Potionarium.Domain\\Potionarium.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-17T16:14:57.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\Identity\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Potionarium.Domain\\Identity\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Domain\\Identity\\ApplicationUser.cs",
+              "RelativeToolTip": "Potionarium.Domain\\Identity\\ApplicationUser.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T16:12:57.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Potionarium.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\Potionarium\\Potionarium.Web\\Program.cs",
+              "RelativeToolTip": "Potionarium.Web\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T15:31:24.871Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

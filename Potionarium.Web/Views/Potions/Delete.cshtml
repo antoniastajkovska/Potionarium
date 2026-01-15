@@ -1,0 +1,82 @@
+﻿@model Potionarium.Domain.DomainModels.Potion
+@{
+    ViewData["Title"] = "Delete Potion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="potion-delete-container" style="background-color: #1a103d; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 800px;">
+        <div class="delete-header mb-4">
+            <h1 style="color: #b38cf7; font-family: 'Cinzel', serif;">
+                <i class="fas fa-trash-alt"></i> Delete Potion
+            </h1>
+            <hr style="border-color: #4a357a;" />
+        </div>
+
+        <div class="delete-card" style="background: linear-gradient(145deg, #2a1b5e 0%, #3d2a7a 100%);
+                border-radius: 10px; padding: 2rem; border: 1px solid #4a357a;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+
+            <div class="warning-message mb-4" style="background-color: #7a354a; padding: 1rem; border-radius: 5px;">
+                <h3 style="color: white;"><i class="fas fa-exclamation-triangle"></i> Warning!</h3>
+                <p style="color: #ffc4c4; margin-bottom: 0;">Are you sure you want to delete this potion? This action cannot be undone.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <div class="potion-image-container" style="height: 200px; overflow: hidden; border-radius: 8px;">
+                        <img src="@(Model.ImageURL ?? "https://i.imgur.com/JQJ8Q9a.png")"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="@Model.Name"
+                             style="object-position: center;"
+                             onerror="this.src='https://i.imgur.com/JQJ8Q9a.png'">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="potion-info">
+                        <h3 style="color: #d4c4ff; border-bottom: 1px solid #4a357a; padding-bottom: 0.5rem;">@Model.Name</h3>
+                        <div class="mb-3">
+                            <span class="badge" style="background-color: #6a4bbc; color: white; font-size: 1rem;">
+                                @Model.Difficulty Difficulty
+                            </span>
+                        </div>
+                        <p style="color: #e0d6ff;"><strong>Effect:</strong> @Model.Effect</p>
+                    </div>
+                </div>
+            </div>
+
+            <form asp-action="Delete" class="mt-4">
+                <input type="hidden" asp-for="Id" />
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn" style="background-color: #4a357a; color: #d4c4ff;">
+                        <i class="fas fa-arrow-left"></i> Cancel
+                    </a>
+                    <button type="submit" class="btn" style="background-color: #d9534f; color: white;">
+                        <i class="fas fa-trash-alt"></i> Confirm Delete
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .object-fit-cover {
+        object-fit: cover;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+        border: none;
+        padding: 0.5rem 1.5rem;
+    }
+
+        .btn:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+</style>

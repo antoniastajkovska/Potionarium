@@ -1,0 +1,102 @@
+﻿@model Potionarium.Domain.DomainModels.Potion
+@{
+    ViewData["Title"] = "Potion Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="potion-details-container" style="background-color: #0e1a40; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 800px;">
+        <div class="details-header mb-4">
+            <h1 style="color: #d1a853; font-family: 'Cinzel', serif;">
+                <i class="fas fa-flask"></i> @Model.Name
+            </h1>
+            <p class="text-muted" style="color: #b3c6ff !important;">Potion Details</p>
+            <hr style="border-color: #5d5d5d;" />
+        </div>
+
+        <div class="details-card" style="background: linear-gradient(145deg, #222f5b 0%, #3a4d8c 100%);
+                border-radius: 10px; padding: 2rem; border: 1px solid #5d5d5d;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+
+            <div class="row mb-4">
+                <div class="col-md-5">
+                    <div class="potion-image-container" style="height: 250px; overflow: hidden; border-radius: 8px; border: 1px solid #5d5d5d;">
+                        <img src="@(Model.ImageURL ?? "https://i.imgur.com/JQJ8Q9a.png")"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="@Model.Name"
+                             style="object-position: center;"
+                             onerror="this.src='https://i.imgur.com/JQJ8Q9a.png'">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="potion-info">
+                        <div class="mb-3">
+                            <span class="badge" style="background-color: #946b2d; color: white; font-size: 1rem; padding: 0.5rem 1rem;">
+                                @Model.Difficulty Difficulty
+                            </span>
+                        </div>
+                        <h3 style="color: #d1a853; border-bottom: 1px solid #5d5d5d; padding-bottom: 0.5rem; margin-bottom: 1rem;">Effect</h3>
+                        <p style="color: #b3c6ff; font-size: 1.1rem;">@Model.Effect</p>
+
+                        @if (!string.IsNullOrEmpty(Model.DetailsLink))
+                        {
+                            <div class="mt-4">
+                                <a href="@Model.DetailsLink" target="_blank" class="btn" style="background-color: #222f5b; color: #d1a853; border: 1px solid #5d5d5d;">
+                                    <i class="fas fa-book"></i> Learn More
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons d-flex justify-content-between mt-4">
+                <a asp-action="Index" class="btn" style="background-color: #222f5b; color: #d1a853; border: 1px solid #5d5d5d;">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn" style="background-color: #946b2d; color: white;">
+                        <i class="fas fa-edit"></i> Edit Potion
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .object-fit-cover {
+        object-fit: cover;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-weight: 500;
+    }
+
+        .btn:hover {
+            filter: brightness(1.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+    .details-card {
+        transition: all 0.3s ease;
+    }
+
+        .details-card:hover {
+            box-shadow: 0 8px 25px rgba(209, 168, 83, 0.2);
+            border-color: #d1a853;
+        }
+
+    .potion-image-container {
+        transition: all 0.3s ease;
+    }
+
+        .potion-image-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(209, 168, 83, 0.3);
+        }
+</style>

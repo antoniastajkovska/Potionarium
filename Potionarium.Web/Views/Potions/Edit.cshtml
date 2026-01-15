@@ -1,0 +1,121 @@
+﻿@model Potionarium.Domain.DomainModels.Potion
+@{
+    ViewData["Title"] = "Edit Potion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="potion-edit-container" style="background-color: #0e1a40; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 800px;">
+        <div class="edit-header mb-4">
+            <h1 style="color: #d1a853; font-family: 'Cinzel', serif;">
+                <i class="fas fa-flask"></i> Edit Potion
+            </h1>
+            <p class="text-muted" style="color: #b3c6ff !important;">Modify the magical properties of this potion</p>
+            <hr style="border-color: #5d5d5d;" />
+        </div>
+
+        <div class="edit-form-container" style="background: linear-gradient(145deg, #222f5b 0%, #3a4d8c 100%);
+                border-radius: 10px; padding: 2rem; border: 1px solid #5d5d5d;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="control-label" style="color: #d1a853; font-weight: 500;"></label>
+                    <input asp-for="Name" class="form-control" style="background-color: #0e1a40; border: 1px solid #5d5d5d; color: #b3c6ff;" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Difficulty" class="control-label" style="color: #d1a853; font-weight: 500;"></label>
+                    <select asp-for="Difficulty" class="form-control" style="background-color: #0e1a40; border: 1px solid #5d5d5d; color: #b3c6ff;">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Master">Master</option>
+                    </select>
+                    <span asp-validation-for="Difficulty" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Effect" class="control-label" style="color: #d1a853; font-weight: 500;"></label>
+                    <textarea asp-for="Effect" class="form-control" rows="3" style="background-color: #0e1a40; border: 1px solid #5d5d5d; color: #b3c6ff;"></textarea>
+                    <span asp-validation-for="Effect" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ImageURL" class="control-label" style="color: #d1a853; font-weight: 500;"></label>
+                    <input asp-for="ImageURL" class="form-control" style="background-color: #0e1a40; border: 1px solid #5d5d5d; color: #b3c6ff;" />
+                    <span asp-validation-for="ImageURL" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label asp-for="DetailsLink" class="control-label" style="color: #d1a853; font-weight: 500;"></label>
+                    <input asp-for="DetailsLink" class="form-control" style="background-color: #0e1a40; border: 1px solid #5d5d5d; color: #b3c6ff;" />
+                    <span asp-validation-for="DetailsLink" class="text-danger"></span>
+                </div>
+
+                <div class="form-group d-flex justify-content-between">
+                    <a asp-action="Index" class="btn" style="background-color: #222f5b; color: #d1a853; border: 1px solid #5d5d5d;">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                    <button type="submit" class="btn" style="background-color: #946b2d; color: white;">
+                        <i class="fas fa-save"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <style>
+        .form-control:focus {
+            border-color: #d1a853;
+            box-shadow: 0 0 0 0.25rem rgba(209, 168, 83, 0.25);
+            background-color: #222f5b;
+            color: white;
+        }
+
+        .text-danger {
+            color: #ff6b6b !important;
+            font-weight: 500;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+            border: none;
+            padding: 8px 16px;
+            font-weight: 500;
+        }
+
+            .btn:hover {
+                filter: brightness(1.2);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+        .edit-form-container {
+            transition: all 0.3s ease;
+        }
+
+            .edit-form-container:hover {
+                box-shadow: 0 8px 25px rgba(209, 168, 83, 0.2);
+            }
+
+        .form-group label {
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+    </style>
+}

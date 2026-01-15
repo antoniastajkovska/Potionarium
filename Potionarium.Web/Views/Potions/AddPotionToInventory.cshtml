@@ -1,0 +1,89 @@
+﻿@model Potionarium.Domain.DTO.AddPotionToInventoryDto
+@{
+    ViewData["Title"] = "Add Potion to Inventory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="inventory-add-container" style="background-color: #1a103d; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 600px;">
+        <div class="add-header mb-4">
+            <h1 style="color: #b38cf7; font-family: 'Cinzel', serif;">
+                <i class="fas fa-box-open"></i> Add to Inventory
+            </h1>
+            <hr style="border-color: #4a357a;" />
+        </div>
+
+        <div class="add-form-container" style="background: linear-gradient(145deg, #2a1b5e 0%, #3d2a7a 100%);
+                border-radius: 10px; padding: 2rem; border: 1px solid #4a357a;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+
+            <div class="potion-preview mb-4" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background-color: rgba(74, 53, 122, 0.3); border-radius: 8px;">
+                    <h4 style="color: #d4c4ff; margin-bottom: 0.25rem;">@Model.PotionName</h4>
+                </div>
+            </div>
+
+            <form asp-action="AddPotionToInventory" method="post">
+                <input type="hidden" asp-for="PotionId" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Quantity" class="control-label" style="color: #d4c4ff;">
+                        <i class="fas fa-hashtag"></i> Quantity
+                    </label>
+                    <input asp-for="Quantity" class="form-control"
+                           style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                           min="1" value="1" />
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn" style="background-color: #4a357a; color: #d4c4ff;">
+                        <i class="fas fa-arrow-left"></i> Cancel
+                    </a>
+                    <button type="submit" class="btn" style="background-color: #8a6ae1; color: white;">
+                        <i class="fas "></i> Add to Inventory
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <style>
+        .form-control:focus {
+            border-color: #8a6ae1;
+            box-shadow: 0 0 0 0.25rem rgba(138, 106, 225, 0.25);
+            background-color: #2a1b5e;
+            color: white;
+        }
+
+        .text-danger {
+            color: #ff6b6b !important;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0.5rem 1.5rem;
+        }
+
+            .btn:hover {
+                filter: brightness(1.1);
+                transform: translateY(-1px);
+            }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+    </style>
+}

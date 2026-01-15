@@ -1,0 +1,37 @@
+﻿@model Potionarium.Domain.DTO.InventoryDto
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<div class="container">
+    <div class="row" style="margin-top:20px;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Potion Name</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(int i=0; i<Model.InventoryItems.Count; i++)
+                {
+                    var currentPotion = Model.InventoryItems[i];
+
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>@currentPotion.Potion.Name</td>
+                        <td>@currentPotion.Quantity</td>
+                        <td>
+                            <a asp-controller="Inventories" asp-action="RemoveFromInventory" asp-route-id="@currentPotion.PotionId" class="btn btn-danger">Delete from cart</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
