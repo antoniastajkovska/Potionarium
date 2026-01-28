@@ -10,3 +10,16 @@ C:\Users\anton\source\repos\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Poti
 C:\Users\anton\source\repos\Potionarium\Potionarium.Domain\obj\Debug\net8.0\refint\Potionarium.Domain.dll
 C:\Users\anton\source\repos\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.pdb
 C:\Users\anton\source\repos\Potionarium\Potionarium.Domain\obj\Debug\net8.0\ref\Potionarium.Domain.dll
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\bin\Debug\net8.0\Potionarium.Domain.deps.json
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\bin\Debug\net8.0\Potionarium.Domain.dll
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\bin\Debug\net8.0\Potionarium.Domain.pdb
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.csproj.AssemblyReference.cache
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.AssemblyInfoInputs.cache
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.AssemblyInfo.cs
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.csproj.CoreCompileInputs.cache
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.sourcelink.json
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.dll
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\refint\Potionarium.Domain.dll
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\Potionarium.Domain.pdb
+C:\Users\anton\Desktop\Potionarium\Potionarium.Domain\obj\Debug\net8.0\ref\Potionarium.Domain.dll

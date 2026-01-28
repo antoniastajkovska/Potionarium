@@ -14,5 +14,7 @@ namespace Potionarium.Service.Interface
         InventoryDto GetByUserIdIncudingPotions(Guid id);
         AddPotionToInventoryDto GetPotionInfo(Guid id);
         Boolean RemoveFromInventory(Guid id, string userId);
+        void BrewPotions(Guid userId);
+        List<BrewedPotionDto> GetBrewedPotionsByUser(Guid userId);
     }
 }

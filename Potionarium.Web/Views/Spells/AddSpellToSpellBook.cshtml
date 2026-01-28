@@ -1,20 +1,77 @@
 ﻿@model Potionarium.Domain.DTO.AddSpellToBookDto
+@{
+    ViewData["Title"] = "Add Spell to Spell Book";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<h4>Add to Spell Book</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="AddSpellToSpellBook" method="post">
-            <input type="hidden" asp-for="SpellId" value="@Model.SpellId" />
-            <div class="form-group">
-                <label asp-for="SpellName" class="control-label"></label>
-                <input asp-for="SpellName" class="form-control" />
-                <span asp-validation-for="SpellName" class="text-danger"></span>
+<div class="spellbook-add-container" style="background-color: #1a103d; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 600px;">
+        <div class="add-header mb-4">
+            <h1 style="color: #b38cf7; font-family: 'Cinzel', serif;">
+                <i class="fas fa-book"></i> Add to Spell Book
+            </h1>
+            <hr style="border-color: #4a357a;" />
+        </div>
+
+        <div class="add-form-container" style="background: linear-gradient(145deg, #2a1b5e 0%, #3d2a7a 100%);
+                border-radius: 10px; padding: 2rem; border: 1px solid #4a357a;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+
+            <div class="spell-preview mb-4" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background-color: rgba(74, 53, 122, 0.3); border-radius: 8px;">
+                <h4 style="color: #d4c4ff; margin-bottom: 0.25rem;">@Model.SpellName</h4>
             </div>
 
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+            <form asp-action="AddSpellToSpellBook" method="post">
+                <input type="hidden" asp-for="SpellId" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="SpellName" class="control-label" style="color: #d4c4ff;">
+                        <i class="fas fa-scroll"></i> Spell Name
+                    </label>
+                    <input asp-for="SpellName" class="form-control"
+                           style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;" />
+                    <span asp-validation-for="SpellName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn" style="background-color: #4a357a; color: #d4c4ff;">
+                        <i class="fas fa-arrow-left"></i> Cancel
+                    </a>
+                    <button type="submit" class="btn" style="background-color: #8a6ae1; color: white;">
+                        <i class="fas fa-plus"></i> Add Spell
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <style>
+        .form-control:focus {
+            border-color: #8a6ae1;
+            box-shadow: 0 0 0 0.25rem rgba(138, 106, 225, 0.25);
+            background-color: #2a1b5e;
+            color: white;
+        }
+
+        .text-danger {
+            color: #ff6b6b !important;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0.5rem 1.5rem;
+        }
+
+            .btn:hover {
+                filter: brightness(1.1);
+                transform: translateY(-1px);
+            }
+    </style>
+}

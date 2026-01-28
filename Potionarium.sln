@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Web", "Potionarium.Web\Potionarium.Web.csproj", "{016F2195-5DA1-4266-A3AE-BE9B759C234C}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Service", "Potionarium.Service\Potionarium.Service.csproj", "{8E7C9585-851C-4E4D-BBAB-00D500DB99E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potionarium.Repository", "Potionarium.Repository\Potionarium.Repository.csproj", "{3A42C65C-D7DE-40BC-AA5D-0B079FF81CAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{688FF52A-708B-4DFF-9D9D-22787FED2CD3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

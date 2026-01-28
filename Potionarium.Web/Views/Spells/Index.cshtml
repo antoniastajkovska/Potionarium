@@ -1,50 +1,137 @@
 ﻿@model List<Potionarium.Domain.DomainModels.Spell>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Magical Spells";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<div class="spell-shop" style="background-color: #0e1a40; min-height: 100vh; padding: 2rem;">
+    <div class="container">
 
-<div class="container">
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-
-    @for (int i = 0; i < Model.Count; i++)
-    {
-        var item = Model[i];
-        @if(i%3 == 0)
-        {
-            @: <div class = "row">
-        }
-
-        <div class="col-3 m-3">
-            <div class="card" style="width: 20rem; height: 30rem;">
-                <img class="card-img-top" src="@item.ImageURL" style="height: 50%;" alt="Spell Image"  />
-                <div class="card-body">
-                    <h3>@item.Name</h3>
-                    <p>Category: @item.Category</p>
-                    <p>Effect: @item.Effect</p>
-                </div>
-
-                <div class="card-footer">
-                    <a asp-action="AddSpellToSpellBook" asp-route-id="@item.Id">Add to Spell Book</a>
-                    <a asp-controller="Spells" asp-action="Details" asp-route-id="@item.Id" class="btn btn-danger">Details</a>
-                    @if (!item.IsFromApi)
-                    {
-                        <a asp-controller="Spells" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
-                        <a asp-controller="Spells" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-                    }
-                </div>
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="display-4" style="color: #946b2d; font-family: 'Times New Roman', serif;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    Spell Catalog
+                </h1>
+                <a asp-action="Create" class="btn btn-lg mt-3"
+                   style="background-color: #222f5b; color: #d1a853; border: none;">
+                    <i class="fas fa-plus"></i> Create New Spell
+                </a>
             </div>
         </div>
 
-        @if(i%3 == 2)
-        {
-            @: </div>
-        }
-    }
+        <div class="row">
+            @foreach (var spell in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100"
+                         style="background: linear-gradient(145deg, #0e1a40 0%, #222f5b 100%);
+                             border-radius: 10px; overflow: hidden; border: 1px solid #5d5d5d;
+                             box-shadow: 0 4px 15px rgba(0,0,0,0.3); color: #b3c6ff;">
 
+                        <div class="spell-image-container" style="height: 250px; overflow: hidden;">
+                            <img src="@(spell.ImageURL ?? "https://i.imgur.com/JQJ8Q9a.png")"
+                                 class="card-img-top h-100 w-100 object-fit-cover"
+                                 alt="@spell.Name"
+                                 style="object-position: center;"
+                                 onerror="this.src='https://i.imgur.com/JQJ8Q9a.png'">
+                        </div>
+
+                        <div class="card-body" style="padding: 1.25rem;">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <h5 class="card-title mb-1"
+                                    style="color: #d1a853; font-size: 1.1rem;">
+                                    @spell.Name
+                                </h5>
+                                <span class="badge" style="background-color: #946b2d; color: white;">
+                                    @spell.Category
+                                </span>
+                            </div>
+
+                            <p class="card-text mt-2 mb-3">
+                                <small>
+                                    <strong style="color: #b3c6ff;">Effect:</strong>
+                                    @(spell.Effect ?? "Mysterious magic")
+                                </small>
+                            </p>
+                        </div>
+
+                        <div class="card-footer"
+                             style="background: rgba(34, 47, 91, 0.7);
+                                 border-top: 1px solid #5d5d5d; padding: 1rem;">
+
+                            <div class="d-flex justify-content-between flex-wrap gap-2">
+
+                                <a asp-action="Details" asp-route-id="@spell.Id"
+                                   class="btn btn-sm"
+                                   style="background-color: #222f5b; color: #d1a853; border: none;">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </a>
+
+                                <a asp-action="AddSpellToSpellBook" asp-route-id="@spell.Id"
+                                   class="btn btn-sm"
+                                   style="background-color: #3a4d8c; color: #d1a853; border: none;">
+                                    <i class="fas fa-book"></i> Add
+                                </a>
+
+                                @if (!spell.IsFromApi)
+                                {
+                                    <a asp-action="Edit" asp-route-id="@spell.Id"
+                                       class="btn btn-sm"
+                                       style="background-color: #2d5b22; color: white; border: none;">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+
+                                    <a asp-action="Delete" asp-route-id="@spell.Id"
+                                       class="btn btn-sm"
+                                       style="background-color: #5b222d; color: white; border: none;">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
 </div>
+
+@section Styles {
+    <style>
+        body {
+            background-color: #0e1a40 !important;
+        }
+
+        .object-fit-cover {
+            object-fit: cover;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body {
+            flex: 1 0 auto;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(209, 168, 83, 0.3);
+            border-color: #946b2d;
+        }
+
+        .btn:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+}

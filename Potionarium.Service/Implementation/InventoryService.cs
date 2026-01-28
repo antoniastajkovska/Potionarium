@@ -16,12 +16,15 @@ namespace Potionarium.Service.Implementation
         private readonly IRepository<Inventory> _inventoryRepository;
         private readonly IRepository<Potion> _potionRepository;
         private readonly IRepository<InventoryItem> _inventoryItemRepository;
+        private readonly IRepository<BrewedPotion> _brewedPotionRepository;
 
-        public InventoryService(IRepository<Inventory> inventoryRepository, IRepository<Potion> potionRepository, IRepository<InventoryItem> inventoryItemRepository)
+
+        public InventoryService(IRepository<Inventory> inventoryRepository, IRepository<Potion> potionRepository, IRepository<InventoryItem> inventoryItemRepository, IRepository<BrewedPotion> brewedPotionRepository)
         {
             _inventoryRepository = inventoryRepository;
             _potionRepository = potionRepository;
             _inventoryItemRepository = inventoryItemRepository;
+            _brewedPotionRepository = brewedPotionRepository;
         }
 
         public Inventory GetByUserId(Guid id)
@@ -59,6 +62,7 @@ namespace Potionarium.Service.Implementation
             return dto;
         }
 
+
         public bool RemoveFromInventory(Guid id, string userId)
         {
             var inventory = _inventoryRepository.Get(selector: x => x,
@@ -70,5 +74,57 @@ namespace Potionarium.Service.Implementation
             _inventoryItemRepository.Delete(potionToRemove);
             return true;
         }
+
+
+        public void BrewPotions(Guid userId)
+        {
+            var inventory = _inventoryRepository.Get(
+                selector: x => x,
+                predicate: x => x.UserId == userId.ToString(),
+                include: x => x
+                    .Include(i => i.PotionsInInventory)
+                    .ThenInclude(pi => pi.Potion)
+            );
+
+            if (inventory == null || !inventory.PotionsInInventory.Any())
+                return;
+
+            foreach (var item in inventory.PotionsInInventory)
+            {
+                var brewedPotion = new BrewedPotion
+                {
+                    Id = Guid.NewGuid(),
+                    PotionId = item.PotionId,
+                    UserId = inventory.UserId,
+                    BrewedOn = DateTime.Now
+                };
+
+                _brewedPotionRepository.Insert(brewedPotion);
+            }
+
+            foreach (var item in inventory.PotionsInInventory.ToList())
+            {
+                _inventoryItemRepository.Delete(item);
+            }
+        }
+
+        public List<BrewedPotionDto> GetBrewedPotionsByUser(Guid userId)
+        {
+            var brewedPotions = _brewedPotionRepository.GetAll(
+                selector: x => x,
+                predicate: x => x.UserId == userId.ToString(),
+                include: x => x.Include(bp => bp.Potion)
+            ).ToList();
+
+            return brewedPotions.Select(bp => new BrewedPotionDto
+            {
+                PotionId = bp.PotionId,
+                PotionName = bp.Potion?.Name,
+                Effect = bp.Potion?.Effect,
+                ImageURL = bp.Potion?.ImageURL,
+                BrewedOn = bp.BrewedOn
+            }).ToList();
+        }
+
     }
 }

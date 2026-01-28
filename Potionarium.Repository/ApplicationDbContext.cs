@@ -17,5 +17,9 @@ namespace Potionarium.Repository
         public DbSet<Inventory> Inventory { get; set; }
         public DbSet<InventoryItem> InventoryItems { get; set; }
         public DbSet<SpellInSpellBook> SpellInSpellBooks { get; set; }
+        public DbSet<LearnedSpell> LearnedSpells { get; set; }
+        public DbSet<BrewedPotion> BrewedPotions { get; set; }
+
+
     }
 }

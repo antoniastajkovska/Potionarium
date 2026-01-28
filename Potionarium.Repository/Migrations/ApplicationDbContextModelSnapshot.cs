@@ -22,6 +22,34 @@ namespace Potionarium.Web.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BrewedPotion", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("BrewedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("PotionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PotionId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BrewedPotions");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -195,6 +223,30 @@ namespace Potionarium.Web.Data.Migrations
                     b.HasIndex("PotionId");
 
                     b.ToTable("InventoryItems");
+                });
+
+            modelBuilder.Entity("Potionarium.Domain.DomainModels.LearnedSpell", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("LearnedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("SpellId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SpellId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("LearnedSpells");
                 });
 
             modelBuilder.Entity("Potionarium.Domain.DomainModels.Potion", b =>
@@ -371,6 +423,25 @@ namespace Potionarium.Web.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("BrewedPotion", b =>
+                {
+                    b.HasOne("Potionarium.Domain.DomainModels.Potion", "Potion")
+                        .WithMany()
+                        .HasForeignKey("PotionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Potionarium.Domain.Identity.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Potion");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -448,6 +519,23 @@ namespace Potionarium.Web.Data.Migrations
                     b.Navigation("Inventory");
 
                     b.Navigation("Potion");
+                });
+
+            modelBuilder.Entity("Potionarium.Domain.DomainModels.LearnedSpell", b =>
+                {
+                    b.HasOne("Potionarium.Domain.DomainModels.Spell", "Spell")
+                        .WithMany()
+                        .HasForeignKey("SpellId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Potionarium.Domain.Identity.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Spell");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Potionarium.Domain.DomainModels.SpellBook", b =>

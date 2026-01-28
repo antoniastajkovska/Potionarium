@@ -1,37 +1,77 @@
 ﻿@model Potionarium.Domain.DTO.InventoryDto
 
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+<div class="spellbook-index-container" style="background-color:#1a103d; min-height:100vh; padding:2rem;">
+    <div class="container" style="max-width:900px;">
+        <h1 style="color:#b38cf7; font-family:'Cinzel',serif;">
+            <i class="fas fa-box"></i> My Inventory
+        </h1>
+        <hr style="border-color:#4a357a;" />
 
-<h1>Index</h1>
-
-<div class="container">
-    <div class="row" style="margin-top:20px;">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Potion Name</th>
-                    <th scope="col">Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                @for(int i=0; i<Model.InventoryItems.Count; i++)
+        @if (!Model.InventoryItems.Any())
+        {
+            <p style="color:#e0d6ff;">Inventory is empty.</p>
+        }
+        else
+        {
+            <div id="inventoryItems" class="row g-4 mb-4">
+                @foreach (var item in Model.InventoryItems)
                 {
-                    var currentPotion = Model.InventoryItems[i];
+                    <div class="col-md-6">
+                        <div style="background:linear-gradient(145deg,#2a1b5e,#3d2a7a);
+                                                    border-radius:10px; padding:1.5rem; border:1px solid #4a357a;">
+                            <h3 style="color:#d4c4ff;">
+                                @item.Potion.Name
+                            </h3>
+                            <p style="color:#e0d6ff;">Quantity: @item.Quantity</p>
 
-                    <tr>
-                        <td>@(i + 1)</td>
-                        <td>@currentPotion.Potion.Name</td>
-                        <td>@currentPotion.Quantity</td>
-                        <td>
-                            <a asp-controller="Inventories" asp-action="RemoveFromInventory" asp-route-id="@currentPotion.PotionId" class="btn btn-danger">Delete from cart</a>
-                        </td>
-                    </tr>
+                            <a asp-action="RemoveFromInventory" asp-route-id="@item.PotionId"
+                               class="btn" style="background:#d9534f; color:white;">
+                                Remove
+                            </a>
+                        </div>
+                    </div>
                 }
-            </tbody>
-        </table>
+            </div>
+        }
+
+        <div class="text-end mt-3">
+            @if (Model.InventoryItems.Any())
+            {
+                <form id="brewForm" asp-action="BrewPotions" method="post" style="display:inline-block;">
+                    <button id="brewBtn" class="btn" style="background:#8a6ae1; color:white;">
+                        <i class="fas fa-flask"></i> Brew All Potions
+                    </button>
+                </form>
+            }
+
+            <a asp-controller="BrewedPotions" asp-action="Index" class="btn" style="background:#6abf8f; color:white; margin-left:10px;">
+                <i class="fas fa-eye"></i> View Brewed Potions
+            </a>
+        </div>
     </div>
 </div>
+
+<div id="popupMessage" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%);
+                              background:#8a6ae1; color:white; padding:1.5rem 2rem; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:1000; font-size:1.2rem;">
+    <i class="fas fa-check-circle"></i> Potions have been brewed!
+</div>
+
+@section Scripts {
+    <script>
+        const brewForm = document.getElementById('brewForm');
+        const brewBtn = document.getElementById('brewBtn');
+        const inventoryItems = document.getElementById('inventoryItems');
+        const popupMessage = document.getElementById('popupMessage');
+
+        if (brewForm) {
+            brewForm.addEventListener('submit', function(event) {
+                brewBtn.disabled = true;
+                brewBtn.innerHTML = '<i class="fas fa-check"></i> Brewing...';
+
+                inventoryItems.style.display = 'none';
+
+                popupMessage.style.display = 'block';
+            });
+        }
+    </script>
+}

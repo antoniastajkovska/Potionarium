@@ -14,5 +14,6 @@ namespace Potionarium.Service.Interface
         SpellBookDto GetByUserIdIncudingSpells(Guid id);
         AddSpellToBookDto GetSpellInfo(Guid id);
         Boolean RemoveFromSpellBook(Guid id, string userId);
+        Boolean LearnAllSpells(Guid userId);
     }
 }

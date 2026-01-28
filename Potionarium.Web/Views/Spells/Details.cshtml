@@ -1,55 +1,117 @@
 ﻿@model Potionarium.Domain.DomainModels.Spell
-
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Spell Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<div class="spell-details-container" style="background-color: #0e1a40; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 800px;">
 
-<div>
-    <h4>Spell</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Category)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Effect)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Effect)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageURL)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageURL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DetailsLink)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DetailsLink)
-        </dd>
-    </dl>
+        <div class="details-header mb-4">
+            <h1 style="color: #d1a853; font-family: 'Cinzel', serif;">
+                <i class="fas fa-hat-wizard"></i> @Model.Name
+            </h1>
+            <p class="text-muted" style="color: #b3c6ff !important;">Spell Details</p>
+            <hr style="border-color: #5d5d5d;" />
+        </div>
+
+        <div class="details-card"
+             style="background: linear-gradient(145deg, #222f5b 0%, #3a4d8c 100%);
+             border-radius: 10px; padding: 2rem; border: 1px solid #5d5d5d;
+             box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+
+            <div class="row mb-4">
+                <div class="col-md-5">
+                    <div class="spell-image-container"
+                         style="height: 250px; overflow: hidden; border-radius: 8px; border: 1px solid #5d5d5d;">
+                        <img src="@(Model.ImageURL ?? "https://i.imgur.com/JQJ8Q9a.png")"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="@Model.Name"
+                             style="object-position: center;"
+                             onerror="this.src='https://i.imgur.com/JQJ8Q9a.png'">
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="spell-info">
+
+                        <div class="mb-3">
+                            <span class="badge"
+                                  style="background-color: #946b2d; color: white; font-size: 1rem; padding: 0.5rem 1rem;">
+                                @Model.Category
+                            </span>
+                        </div>
+
+                        <h3 style="color: #d1a853; border-bottom: 1px solid #5d5d5d;
+                                   padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                            Effect
+                        </h3>
+
+                        <p style="color: #b3c6ff; font-size: 1.1rem;">
+                            @Model.Effect
+                        </p>
+
+                        @if (!string.IsNullOrEmpty(Model.DetailsLink))
+                        {
+                            <div class="mt-4">
+                                <a href="@Model.DetailsLink" target="_blank" class="btn"
+                                   style="background-color: #222f5b; color: #d1a853; border: 1px solid #5d5d5d;">
+                                    <i class="fas fa-book"></i> Learn More
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons d-flex justify-content-between mt-4">
+                <a asp-action="Index" class="btn"
+                   style="background-color: #222f5b; color: #d1a853; border: 1px solid #5d5d5d;">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn"
+                   style="background-color: #946b2d; color: white;">
+                    <i class="fas fa-edit"></i> Edit Spell
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<style>
+    .object-fit-cover {
+        object-fit: cover;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-weight: 500;
+    }
+
+        .btn:hover {
+            filter: brightness(1.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+    .details-card {
+        transition: all 0.3s ease;
+    }
+
+        .details-card:hover {
+            box-shadow: 0 8px 25px rgba(209, 168, 83, 0.2);
+            border-color: #d1a853;
+        }
+
+    .spell-image-container {
+        transition: all 0.3s ease;
+    }
+
+        .spell-image-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(209, 168, 83, 0.3);
+        }
+</style>

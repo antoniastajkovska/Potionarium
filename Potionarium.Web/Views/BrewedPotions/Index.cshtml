@@ -1,0 +1,31 @@
+﻿@model List<Potionarium.Domain.DTO.BrewedPotionDto>
+
+<div class="spellbook-index-container" style="background-color:#1a103d; min-height:100vh; padding:2rem;">
+    <div class="container" style="max-width:900px;">
+        <h1 style="color:#b38cf7; font-family:'Cinzel',serif;">
+            <i class="fas fa-flask"></i> Brewed Potions
+        </h1>
+        <hr style="border-color:#4a357a;" />
+
+        @if (!Model.Any())
+        {
+            <p style="color:#e0d6ff;">You haven't brewed any potions yet.</p>
+        }
+        else
+        {
+            <div class="row g-4">
+                @foreach (var potion in Model)
+                {
+                    <div class="col-md-6">
+                        <div style="background:linear-gradient(145deg,#2a1b5e,#3d2a7a);
+                                            border-radius:10px; padding:1.5rem; border:1px solid #4a357a;">
+                            <h3 style="color:#d4c4ff;">@potion.PotionName</h3>
+                            <p style="color:#e0d6ff;">Effect: @potion.Effect</p>
+                            <p style="color:#e0d6ff; font-size:0.9rem;">Brewed on: @potion.BrewedOn.ToString("g")</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

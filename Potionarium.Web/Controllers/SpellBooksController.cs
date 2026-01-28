@@ -35,5 +35,20 @@ namespace Potionarium.Web.Controllers
             _spellBookService.RemoveFromSpellBook(id, userId);
             return RedirectToAction("Index");
         }
+
+
+        [HttpPost]
+        public IActionResult LearnAll()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            _spellBookService.LearnAllSpells(Guid.Parse(userId)); 
+
+            TempData["LearnedAll"] = true;
+
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

@@ -37,5 +37,16 @@ namespace Potionarium.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
+        public IActionResult BrewPotions()
+        {
+            var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+
+            _inventoryService.BrewPotions(userId);
+
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

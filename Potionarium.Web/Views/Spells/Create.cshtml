@@ -1,59 +1,117 @@
 ﻿@model Potionarium.Domain.DomainModels.Spell
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Spell";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<div class="spell-create-container" style="background-color: #1a103d; min-height: 100vh; padding: 2rem;">
+    <div class="container" style="max-width: 800px;">
+        <div class="create-header mb-4">
+            <h1 style="color: #b38cf7; font-family: 'Cinzel', serif;">
+                <i class="fas fa-magic"></i> Conjure New Spell
+            </h1>
+            <p class="text-muted" style="color: #d4c4ff !important;">Fill the spellbook with magical incantations</p>
+            <hr style="border-color: #4a357a;" />
+        </div>
 
-<h4>Spell</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
-                <span asp-validation-for="Category" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Effect" class="control-label"></label>
-                <input asp-for="Effect" class="form-control" />
-                <span asp-validation-for="Effect" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
-                <span asp-validation-for="ImageURL" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DetailsLink" class="control-label"></label>
-                <input asp-for="DetailsLink" class="form-control" />
-                <span asp-validation-for="DetailsLink" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        <div class="create-form-container" style="background: linear-gradient(145deg, #2a1b5e 0%, #3d2a7a 100%);
+                border-radius: 10px; padding: 2rem; border: 1px solid #4a357a;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Name" class="control-label" style="color: #d4c4ff;"></label>
+                    <input asp-for="Name" class="form-control"
+                           style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                           placeholder="Enter spell name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Category" class="control-label" style="color: #d4c4ff;"></label>
+                    <input asp-for="Category" class="form-control"
+                           style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                           placeholder="Enter spell category" />
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="control-label" style="color: #d4c4ff;"></label>
+                    <textarea asp-for="Description" class="form-control" rows="2"
+                              style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                              placeholder="Optional description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Effect" class="control-label" style="color: #d4c4ff;"></label>
+                    <textarea asp-for="Effect" class="form-control" rows="3"
+                              style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                              placeholder="Describe the magical effect"></textarea>
+                    <span asp-validation-for="Effect" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ImageURL" class="control-label" style="color: #d4c4ff;"></label>
+                    <input asp-for="ImageURL" class="form-control"
+                           style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                           placeholder="Paste image URL" />
+                    <span asp-validation-for="ImageURL" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label asp-for="DetailsLink" class="control-label" style="color: #d4c4ff;"></label>
+                    <input asp-for="DetailsLink" class="form-control"
+                           style="background-color: #1e1245; border: 1px solid #4a357a; color: #e0d6ff;"
+                           placeholder="Optional reference link" />
+                    <span asp-validation-for="DetailsLink" class="text-danger"></span>
+                </div>
+
+                <div class="form-group d-flex justify-content-between">
+                    <a asp-action="Index" class="btn" style="background-color: #4a357a; color: #d4c4ff;">
+                        <i class="fas fa-arrow-left"></i> Cancel
+                    </a>
+                    <button type="submit" class="btn" style="background-color: #8a6ae1; color: white;">
+                        <i class="fas fa-magic"></i> Create Spell
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <style>
+        .form-control:focus {
+            border-color: #8a6ae1;
+            box-shadow: 0 0 0 0.25rem rgba(138, 106, 225, 0.25);
+            background-color: #2a1b5e;
+            color: white;
+        }
+
+        .text-danger {
+            color: #ff6b6b !important;
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0.5rem 1.5rem;
+        }
+
+            .btn:hover {
+                filter: brightness(1.1);
+                transform: translateY(-1px);
+            }
+
+        ::placeholder {
+            color: #8a6ae1 !important;
+            opacity: 0.5;
+        }
+    </style>
 }
