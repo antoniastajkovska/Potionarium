@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Potionarium.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f93f88ecdcb45366b73dd23768d217715b0ec3d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fc7f70ff50f068e15039b01dd61792c42627230")]
 [assembly: System.Reflection.AssemblyProductAttribute("Potionarium.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Potionarium.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
