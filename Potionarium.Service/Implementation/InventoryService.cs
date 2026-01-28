@@ -96,7 +96,7 @@ namespace Potionarium.Service.Implementation
                     Id = Guid.NewGuid(),
                     PotionId = item.PotionId,
                     UserId = inventory.UserId,
-                    BrewedOn = DateTime.Now
+                    BrewedOn = DateTime.UtcNow
                 };
 
                 _brewedPotionRepository.Insert(brewedPotion);

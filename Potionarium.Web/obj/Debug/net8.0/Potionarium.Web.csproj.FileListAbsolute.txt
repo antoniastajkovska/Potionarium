@@ -628,3 +628,5 @@ C:\Users\anton\Desktop\Potionarium\Potionarium.Web\obj\Debug\net8.0\refint\Potio
 C:\Users\anton\Desktop\Potionarium\Potionarium.Web\obj\Debug\net8.0\Potionarium.Web.pdb
 C:\Users\anton\Desktop\Potionarium\Potionarium.Web\obj\Debug\net8.0\Potionarium.Web.genruntimeconfig.cache
 C:\Users\anton\Desktop\Potionarium\Potionarium.Web\obj\Debug\net8.0\ref\Potionarium.Web.dll
+C:\Users\anton\Desktop\Potionarium\Potionarium.Web\bin\Debug\net8.0\Npgsql.dll
+C:\Users\anton\Desktop\Potionarium\Potionarium.Web\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
